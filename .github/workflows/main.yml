@@ -5,6 +5,7 @@ on:
 
 jobs:
   publish:
+    runs-on: ubuntu-latest
     env:
       IMAGE_NAME: ghcr.io/${{ github.repository }}
     permissions:
