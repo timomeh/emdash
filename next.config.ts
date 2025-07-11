@@ -1,7 +1,11 @@
-import type { NextConfig } from 'next'
+import { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'standalone',
+  poweredByHeader: false,
+  eslint: {
+    dirs: ['src'],
+  },
 }
 
 export default nextConfig
